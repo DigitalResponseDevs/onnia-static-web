@@ -1,0 +1,6 @@
+# Redirecciones amigables para las páginas de productos
+/producto-1 /pages/producto-1.html 200
+/producto-2 /pages/producto-2.html 200
+/producto-3 /pages/producto-3.html 200
+/producto-4 /pages/producto-4.html 200
+

@@ -1,0 +1,322 @@
+<!-- Incluye Tailwind en tu proyecto -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onnia</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+          <span class="text-white font-bold text-sm">ON</span>
+        </div>
+        <span class="text-xl font-bold text-gray-900">Onnia</span>
+      </a>
+
+      <!-- Navigation -->
+      <!-- <nav class="hidden md:flex items-center space-x-8">
+        <a href="/" class="text-gray-700 hover:text-black transition-colors duration-200">Inicio</a>
+        <a href="/" class="text-gray-700 hover:text-black transition-colors duration-200">Productos</a>
+        <a href="/" class="text-gray-700 hover:text-black transition-colors duration-200">Categorías</a>
+        <a href="/" class="text-gray-700 hover:text-black transition-colors duration-200">Ofertas</a>
+      </nav> -->
+
+      <!-- Right side icons -->
+      <div class="flex items-center space-x-4">
+        <button class="p-2 text-gray-600 hover:text-black transition-colors duration-200">
+          <i class="ph ph-magnifying-glass text-[20px]"></i>
+        </button>
+        <button class="p-2 text-gray-600 hover:text-black transition-colors duration-200">
+          <i class="ph ph-user text-[20px]"></i>
+        </button>
+        <div class="relative">
+          <button class="p-2 text-gray-600 hover:text-black transition-colors duration-200 relative">
+            <i class="ph ph-shopping-bag text-[20px]"></i>
+          </button>
+          <!-- Contador del carrito -->
+          <span class="absolute -top-1 -right-1 bg-black text-white text-xs rounded-full w-5 h-5 flex items-center justify-center hidden" id="cart-count">
+            0
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="bg-blue-200">
+    <div class="max-w-7xl mx-auto px-4 py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <!-- Texto -->
+      <div>
+        <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+          Viste con estilo, <br class="hidden sm:block" />
+          siéntete tú misma
+        </h1>
+        <p class="mt-4 text-lg text-gray-600">
+          Descubre las últimas tendencias en moda para todos los gustos. Ropa de calidad, a tu alcance.
+        </p>
+        <a href="#productos" class="mt-6 inline-block bg-black text-white px-6 py-3 rounded-full text-base font-medium hover:bg-gray-800 transition">
+          Ver productos
+        </a>
+      </div>
+  
+      <!-- Imagen -->
+      <div class="relative">
+        <img
+          src="images/header.png"
+          alt="Moda"
+          class="w-full rounded-lg shadow-md object-cover"
+        />
+      </div>
+    </div>
+</section>
+
+<!-- SECCIÓN DE PRODUCTOS -->
+<section id="productos" class="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">Nuestros Productos</h2>
+  
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+  
+        <!-- Producto 1 - En stock -->
+        <div class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 instock">
+          <a href="/pages/producto-1.html" class="block">
+            <div class="h-[380px] bg-gray-100 relative overflow-hidden">
+              <img
+                src="images/vestido-saten-rosa-nude-large-onnia.png"
+                alt="Vestido básico"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <button class="p-2 bg-white rounded-full shadow-md hover:bg-gray-50 transition">
+                  <i class="ph ph-heart text-gray-600 text-sm"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+          <div class="p-4">
+            <span class="text-xs text-gray-500 uppercase tracking-wide">Vestidos</span>
+            <a href="/pages/producto-1.html">
+              <h3 class="text-lg font-semibold text-gray-900 hover:text-gray-700 transition-colors">Vestido básico</h3>
+            </a>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-xl font-bold text-gray-900">$29.99</span>
+              <button class="flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium bg-black text-white hover:bg-gray-800 transition">
+                <i class="ph ph-shopping-cart text-sm"></i>
+                <span>Añadir</span>
+              </button>
+            </div>
+            <div class="mt-2 flex space-x-1">
+              <div class="w-4 h-4 rounded-full border border-gray-200" style="background-color: #000;"></div>
+              <div class="w-4 h-4 rounded-full border border-gray-200" style="background-color: #fff;"></div>
+              <div class="w-4 h-4 rounded-full border border-gray-200" style="background-color: #6B7280;"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Producto 2 - Sin stock -->
+        <div class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 instock">
+          <a href="/pages/producto-2.html" class="block">
+            <div class="h-[380px] bg-gray-100 relative overflow-hidden">
+              <img
+                src="images/vestido-saten-corto-oliva-onnia.png"
+                alt="Vestido Oliva"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-70"
+              />
+            </div>
+          </a>
+          <div class="p-4">
+            <span class="text-xs text-gray-500 uppercase tracking-wide">Vestidos</span>
+            <a href="/pages/producto-2.html">
+              <h3 class="text-lg font-semibold text-gray-900 hover:text-gray-700 transition-colors">Vestido Oliva</h3>
+            </a>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-xl font-bold text-gray-900">$49.99</span>
+              <button class="flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium bg-black text-white hover:bg-gray-800 transition">
+                <i class="ph ph-shopping-cart text-sm"></i>
+                <span>Añadir</span>
+              </button>
+            </div>
+            <div class="mt-2 flex space-x-1">
+              <div class="w-4 h-4 rounded-full border border-gray-200" style="background-color: #92400E;"></div>
+              <div class="w-4 h-4 rounded-full border border-gray-200" style="background-color: #D4B5A0;"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Producto 3 -->
+        <div class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 no-stock">
+          <a href="/pages/producto-3.html" class="block">
+            <div class="h-[380px] bg-gray-100 relative overflow-hidden">
+              <img
+                src="images/vestido-saten-rosa-nude-short-onnia.png"
+                alt="Vestido oliva"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <span class="text-white font-semibold">Agotado</span>
+              </div>
+            </div>
+          </a>
+          <div class="p-4">
+            <span class="text-xs text-gray-500 uppercase tracking-wide">Vestidos</span>
+            <a href="/pages/producto-3.html">
+              <h3 class="text-lg font-semibold text-gray-900 hover:text-gray-700 transition-colors">Vestido corto</h3>
+            </a>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-xl font-bold text-gray-900">$59.00</span>
+              <button disabled class="flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium bg-gray-200 text-gray-500 cursor-not-allowed">
+                <i class="ph ph-shopping-cart text-sm"></i>
+                <span>Agotado</span>
+              </button>
+            </div>
+            <div class="mt-2 flex space-x-1">
+              <div class="w-4 h-4 rounded-full border border-gray-200" style="background-color: #1E40AF;"></div>
+              <div class="w-4 h-4 rounded-full border border-gray-200" style="background-color: #3B82F6;"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Producto 4 -->
+        <div class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 no-stock">
+          <a href="/pages/producto-4.html" class="block">
+            <div class="h-[380px] bg-gray-100 relative overflow-hidden">
+              <img
+                src="images/pantalon-saten-rosa-nude-onnia.png"
+                alt="Pantalon elegante"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <span class="text-white font-semibold">Agotado</span>
+              </div>
+            </div>
+          </a>
+          <div class="p-4">
+            <span class="text-xs text-gray-500 uppercase tracking-wide">Pantalones</span>
+            <a href="/pages/producto-4.html">
+              <h3 class="text-lg font-semibold text-gray-900 hover:text-gray-700 transition-colors">Pantalón elegante</h3>
+            </a>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-xl font-bold text-gray-900">$39.90</span>
+              <button disabled class="flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium bg-gray-200 text-gray-500 cursor-not-allowed">
+                <i class="ph ph-shopping-cart text-sm"></i>
+                <span>Agotado</span>
+              </button>
+            </div>
+            <div class="mt-2 flex space-x-1">
+              <div class="w-4 h-4 rounded-full border border-gray-200" style="background-color: #6B7280;"></div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+<section class="bg-blue-200 py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div class="p-6">
+        <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
+          <span class="text-white text-2xl">🚚</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Envío Gratuito</h3>
+        <p class="text-gray-600">Envío gratuito en pedidos superiores a $50</p>
+      </div>
+      <div class="p-6">
+        <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
+          <span class="text-white text-2xl">↩️</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Devoluciones Fáciles</h3>
+        <p class="text-gray-600">30 días para devolver cualquier producto</p>
+      </div>
+      <div class="p-6">
+        <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
+          <span class="text-white text-2xl">⭐</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Calidad Premium</h3>
+        <p class="text-gray-600">Materiales de la más alta calidad</p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Brand -->
+        <div class="space-y-4">
+          <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+              <span class="text-black font-bold text-sm">ON</span>
+            </div>
+            <span class="text-xl font-bold">Onnia</span>
+          </div>
+          <p class="text-gray-400 text-sm">
+            Tu destino para la moda contemporánea y el estilo auténtico.
+          </p>
+          <div class="flex space-x-4 text-gray-400">
+            <a href="#" class="hover:text-white cursor-pointer transition-colors duration-200" aria-label="Facebook">📘</a>
+            <a href="#" class="hover:text-white cursor-pointer transition-colors duration-200" aria-label="Instagram">📸</a>
+            <a href="#" class="hover:text-white cursor-pointer transition-colors duration-200" aria-label="Twitter">🐦</a>
+            <a href="#" class="hover:text-white cursor-pointer transition-colors duration-200" aria-label="Email">✉️</a>
+          </div>
+        </div>
+  
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Enlaces Rápidos</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Inicio</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Productos</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Ofertas</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Nuevo</a></li>
+          </ul>
+        </div>
+  
+        <!-- Customer Service -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Atención al Cliente</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Contacto</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Devoluciones</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Envíos</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Tallas</a></li>
+          </ul>
+        </div>
+  
+        <!-- Newsletter -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+          <p class="text-gray-400 text-sm mb-4">
+            Suscríbete para recibir ofertas exclusivas
+          </p>
+          <div class="flex">
+            <input
+              type="email"
+              placeholder="Tu email"
+              class="flex-1 px-3 py-2 bg-gray-800 text-white border border-gray-700 rounded-l-md focus:outline-none focus:border-white text-sm"
+            />
+            <button class="bg-white text-black px-4 py-2 rounded-r-md hover:bg-gray-100 transition-colors duration-200 text-sm font-medium">
+              Suscribirse
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-400">
+        <p>&copy; 2025 Onnia. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+
+</body>
+</html>
