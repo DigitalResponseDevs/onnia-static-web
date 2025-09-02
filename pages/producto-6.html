@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Camiseta básica cruda</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Breadcrumb -->
+    <div class="mb-8">
+      <a href="/index.html" class="inline-flex items-center text-gray-600 hover:text-black transition-colors duration-200">
+        &larr; Volver a productos
+      </a>
+    </div>
+
+    <div class="no-stock bg-white rounded-lg shadow-sm overflow-hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 lg:p-8">
+        <!-- Imagen -->
+        <div class="space-y-4">
+          <div class="aspect-square bg-gray-100 rounded-lg overflow-hidden relative">
+            <img
+              src="../images/camiseta-basica-cruda-onnia.png"
+              alt="Camiseta basica cruda"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+              <span class="text-white font-semibold text-xl">Agotado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Información producto -->
+        <div class="space-y-6">
+                <div>
+        <span class="text-sm text-gray-500 uppercase tracking-wide">Camisetas</span>
+        <h1 class="text-3xl font-bold text-gray-900 mt-2">Camiseta básica cruda</h1>
+        <p class="text-2xl font-bold text-gray-900 mt-4">$19.95</p>
+        </div>
+
+        <div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Descripción</h3>
+        <p class="text-gray-600 leading-relaxed">
+            Una camiseta básica en color crudo, cómoda y versátil, perfecta para el uso diario y para combinar con diferentes estilos.
+        </p>
+        </div>
+
+
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">Color</h3>
+            <div class="flex space-x-3">
+              <button class="px-4 py-2 border rounded-md text-sm font-medium border-gray-300 text-gray-400 cursor-not-allowed" disabled>Rosa Nude</button>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">Talla</h3>
+            <div class="flex flex-wrap gap-2">
+              <button class="px-4 py-2 border rounded-md text-sm font-medium border-gray-300 text-gray-400 cursor-not-allowed" disabled>S</button>
+              <button class="px-4 py-2 border rounded-md text-sm font-medium border-gray-300 text-gray-400 cursor-not-allowed" disabled>M</button>
+              <button class="px-4 py-2 border rounded-md text-sm font-medium border-gray-300 text-gray-400 cursor-not-allowed" disabled>L</button>
+            </div>
+          </div>
+
+          <!-- Botones -->
+          <div class="flex space-x-4 pt-6">
+            <button
+              disabled
+              class="flex-1 flex items-center justify-center space-x-2 py-3 px-6 rounded-md font-semibold bg-gray-200 text-gray-500 cursor-not-allowed"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M3 3v18M21 3v18" />
+              </svg>
+              <span>Agotado</span>
+            </button>
+            <button class="p-3 border border-gray-300 rounded-md cursor-not-allowed" disabled>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Características -->
+          <div class="border-t pt-6 space-y-4 text-gray-400">
+            <div class="flex items-center space-x-3 text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18M9 21h6" />
+              </svg>
+              <span>Envío gratuito en pedidos superiores a $50</span>
+            </div>
+            <div class="flex items-center space-x-3 text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01" />
+              </svg>
+              <span>Devoluciones gratuitas dentro de 30 días</span>
+            </div>
+            <div class="flex items-center space-x-3 text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12l9-5-9-5-9 5 9 5z" />
+              </svg>
+              <span>Garantía de calidad premium</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
