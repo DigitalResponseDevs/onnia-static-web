@@ -2,91 +2,107 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Robe midi noire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chemise blanche en lin</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50">
-
-  <main class="max-w-7xl mx-auto px-4 py-10">
-    <!-- Fil d’Ariane -->
-    <div class="mb-6">
-      <a href="/index.html" class="text-gray-600 hover:text-black flex items-center space-x-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-        <span>Retour aux produits</span>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Breadcrumb -->
+    <div class="mb-8">
+      <a href="/index.html" class="inline-flex items-center text-gray-600 hover:text-black transition-colors duration-200">
+        &larr; Retour aux produits
       </a>
     </div>
 
-    <div class="instock bg-white rounded-lg shadow-sm overflow-hidden">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 lg:p-10">
-        
-        <!-- Galerie -->
-        <div>
-          <div class="aspect-square bg-gray-100 rounded-lg overflow-hidden mb-4">
-            <img src="../images/vestido-midi-negro-onnia.png" alt="Robe midi noire" class="w-full h-full object-cover">
+    <div class="no-stock bg-white rounded-lg shadow-sm overflow-hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 lg:p-8">
+        <!-- Image -->
+        <div class="space-y-4">
+          <div class="aspect-square bg-gray-100 rounded-lg overflow-hidden relative">
+            <img
+              src="../images/camisa-blanca-lino.png"
+              alt="Chemise blanche en lin"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+              <span class="text-white font-semibold text-xl">Épuisé</span>
+            </div>
           </div>
         </div>
 
-        <!-- Informations du produit -->
+        <!-- Informations produit -->
         <div class="space-y-6">
           <div>
-            <span class="text-sm text-gray-500 uppercase tracking-wide">Robes</span>
-            <h1 class="text-3xl font-bold text-gray-900 mt-2">Robe midi noire</h1>
-            <p class="text-2xl font-bold text-gray-900 mt-4">45,95 €</p>
+            <span class="text-sm text-gray-500 uppercase tracking-wide">Chemises</span>
+            <h1 class="text-3xl font-bold text-gray-900 mt-2">Chemise blanche en lin</h1>
+            <p class="text-3xl font-bold text-gray-900 mt-4">29,95 €</p>
           </div>
 
           <div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Description</h3>
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">Description</h3>
             <p class="text-gray-600 leading-relaxed">
-              Une robe midi de couleur noire, élégante et intemporelle, parfaite pour les occasions spéciales ou pour un look sophistiqué au quotidien.
+              Une chemise blanche en lin fraîche et légère, idéale pour les climats chauds et pour un style élégant et naturel.
             </p>
           </div>
 
           <div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Couleurs disponibles</h3>
-            <div class="flex space-x-2">
-              <div class="w-6 h-6 rounded-full border" style="background-color: #fff;"></div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">Couleur</h3>
+            <div class="flex space-x-3">
+              <button class="px-4 py-2 border rounded-md text-sm font-medium border-gray-300 text-gray-400 cursor-not-allowed" disabled>Rose nude</button>
             </div>
           </div>
 
           <div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Tailles</h3>
-            <div class="flex space-x-2">
-              <span class="px-3 py-1 border rounded-md text-sm">S</span>
-              <span class="px-3 py-1 border rounded-md text-sm">M</span>
-              <span class="px-3 py-1 border rounded-md text-sm">L</span>
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">Taille</h3>
+            <div class="flex flex-wrap gap-2">
+              <button class="px-4 py-2 border rounded-md text-sm font-medium border-gray-300 text-gray-400 cursor-not-allowed" disabled>S</button>
+              <button class="px-4 py-2 border rounded-md text-sm font-medium border-gray-300 text-gray-400 cursor-not-allowed" disabled>M</button>
+              <button class="px-4 py-2 border rounded-md text-sm font-medium border-gray-300 text-gray-400 cursor-not-allowed" disabled>L</button>
             </div>
           </div>
 
-          <!-- Bouton d’action -->
-          <div class="pt-4">
-            <button class="w-full flex items-center justify-center px-6 py-3 bg-black text-white rounded-md font-semibold hover:bg-gray-800 transition">
-              Ajouter au panier
+          <!-- Boutons -->
+          <div class="flex space-x-4 pt-6">
+            <button
+              disabled
+              class="flex-1 flex items-center justify-center space-x-2 py-3 px-6 rounded-md font-semibold bg-gray-200 text-gray-500 cursor-not-allowed"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M3 3v18M21 3v18" />
+              </svg>
+              <span>Épuisé</span>
+            </button>
+            <button class="p-3 border border-gray-300 rounded-md cursor-not-allowed" disabled>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
             </button>
           </div>
 
-          <!-- Avantages -->
-          <div class="border-t pt-6 space-y-2 text-sm text-gray-600">
-            <div class="flex items-center space-x-2">
-              <span>🚚</span>
-              <span>Livraison gratuite pour les commandes supérieures à 50 €</span>
+          <!-- Caractéristiques -->
+          <div class="border-t pt-6 space-y-4 text-gray-400">
+            <div class="flex items-center space-x-3 text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18M9 21h6" />
+              </svg>
+              <span>Livraison gratuite pour les commandes de plus de 50 €</span>
             </div>
-            <div class="flex items-center space-x-2">
-              <span>🔁</span>
+            <div class="flex items-center space-x-3 text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01" />
+              </svg>
               <span>Retours gratuits sous 30 jours</span>
             </div>
-            <div class="flex items-center space-x-2">
-              <span>🛡️</span>
+            <div class="flex items-center space-x-3 text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12l9-5-9-5-9 5 9 5z" />
+              </svg>
               <span>Garantie de qualité premium</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </main>
-
 </body>
 </html>
-
