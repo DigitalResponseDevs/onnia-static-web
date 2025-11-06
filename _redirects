@@ -10,45 +10,46 @@
 /producto-9 /pages/producto-9.html 200
 
 # Redirecciones para versiones en alemán (DE)
-/de-producto-1 /pages/producto-1-DE.html 200
-/de-producto-2 /pages/producto-2-DE.html 200
-/de-producto-3 /pages/producto-3-DE.html 200
-/de-producto-4 /pages/producto-4-DE.html 200
-/de-producto-5 /pages/producto-5-DE.html 200
-/de-producto-6 /pages/producto-6-DE.html 200
-/de-producto-7 /pages/producto-7-DE.html 200
-/de-producto-8 /pages/producto-8-DE.html 200
-/de-producto-9 /pages/producto-9-DE.html 200
+/de/producto-1 /pages/de-producto-1.html 200
+/de/producto-2 /pages/de-producto-2.html 200
+/de/producto-3 /pages/de-producto-3.html 200
+/de/producto-4 /pages/de-producto-4.html 200
+/de/producto-5 /pages/de-producto-5.html 200
+/de/producto-6 /pages/de-producto-6.html 200
+/de/producto-7 /pages/de-producto-7.html 200
+/de/producto-8 /pages/de-producto-8.html 200
+/de/producto-9 /pages/de-producto-9.html 200
 
 # Redirecciones para versiones en francés (FR)
-/fr-producto-1 /pages/producto-1-FR.html 200
-/fr-producto-2 /pages/producto-2-FR.html 200
-/fr-producto-3 /pages/producto-3-FR.html 200
-/fr-producto-4 /pages/producto-4-FR.html 200
-/fr-producto-5 /pages/producto-5-FR.html 200
-/fr-producto-6 /pages/producto-6-FR.html 200
-/fr-producto-7 /pages/producto-7-FR.html 200
-/fr-producto-8 /pages/producto-8-FR.html 200
-/fr-producto-9 /pages/producto-9-FR.html 200
+/fr/producto-1 /pages/fr-producto-1.html 200
+/fr/producto-2 /pages/fr-producto-2.html 200
+/fr/producto-3 /pages/fr-producto-3.html 200
+/fr/producto-4 /pages/fr-producto-4.html 200
+/fr/producto-5 /pages/fr-producto-5.html 200
+/fr/producto-6 /pages/fr-producto-6.html 200
+/fr/producto-7 /pages/fr-producto-7.html 200
+/fr/producto-8 /pages/fr-producto-8.html 200
+/fr/producto-9 /pages/fr-producto-9.html 200
 
 # Redirecciones para versiones en italiano (IT)
-/it-producto-1 /pages/producto-1-IT.html 200
-/it-producto-2 /pages/producto-2-IT.html 200
-/it-producto-3 /pages/producto-3-IT.html 200
-/it-producto-4 /pages/producto-4-IT.html 200
-/it-producto-5 /pages/producto-5-IT.html 200
-/it-producto-6 /pages/producto-6-IT.html 200
-/it-producto-7 /pages/producto-7-IT.html 200
-/it-producto-8 /pages/producto-8-IT.html 200
-/it-producto-9 /pages/producto-9-IT.html 200
+/it/producto-1 /pages/it-producto-1.html 200
+/it/producto-2 /pages/it-producto-2.html 200
+/it/producto-3 /pages/it-producto-3.html 200
+/it/producto-4 /pages/it-producto-4.html 200
+/it/producto-5 /pages/it-producto-5.html 200
+/it/producto-6 /pages/it-producto-6.html 200
+/it/producto-7 /pages/it-producto-7.html 200
+/it/producto-8 /pages/it-producto-8.html 200
+/it/producto-9 /pages/it-producto-9.html 200
+
 
 # Redirecciones para versiones en inglés (EN)
-/en-producto-1 /pages/producto-1-EN.html 200
-/en-producto-2 /pages/producto-2-EN.html 200
-/en-producto-3 /pages/producto-3-EN.html 200
-/en-producto-4 /pages/producto-4-EN.html 200
-/en-producto-5 /pages/producto-5-EN.html 200
-/en-producto-6 /pages/producto-6-EN.html 200
-/en-producto-7 /pages/producto-7-EN.html 200
-/en-producto-8 /pages/producto-8-EN.html 200
-/en-producto-9 /pages/producto-9-EN.html 200
+/en/producto-1 /pages/en-producto-1.html 200
+/en/producto-2 /pages/en-producto-2.html 200
+/en/producto-3 /pages/en-producto-3.html 200
+/en/producto-4 /pages/en-producto-4.html 200
+/en/producto-5 /pages/en-producto-5.html 200
+/en/producto-6 /pages/en-producto-6.html 200
+/en/producto-7 /pages/en-producto-7.html 200
+/en/producto-8 /pages/en-producto-8.html 200
+/en/producto-9 /pages/en-producto-9.html 200
